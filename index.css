@@ -7,6 +7,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
+    color: #fff;
 }
 .container {
     width: 90%;
@@ -37,18 +38,23 @@
       max-width: 1536px;
     }
   }
+  /* .bg{
+    background: url('assets/bgsoundwave.png') center / cover no-repeat ;
+  } */
+  .bg{
+    background-image: url(assets/bgsoundwave.png);
+    background-size: cover;
+    background-position: center;
+  }
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav{
-    background-color: red;
-}
 .logosound{
-    align-items: center;
-    display: flex;
-    gap: 31px;
+  display: flex;
+  align-items: center;
+  gap: 31px;
 }
 .logosound span{
     color: white;
@@ -61,8 +67,56 @@ ul{
 }
 /* this is for menu bar on mobile */
 .menu i{
-    color: white;
     font-size: 25px;
+}
+.hero{
+  display: grid;
+  color: white;
+  gap: 2rem;
+}
+.feel_join p{
+  font-size: 20px;
+}
+.feel_join h1{
+  font-size: 40px;
+}
+.feel_join p{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 29px;
+}
+.feel_join button{
+  padding: 15px 60px;
+  border-radius: 10px;
+  border:none;
+  background:#1762A7;
+  font-size: 20px;
+}
+.hero img{
+  width: 100%;
+}
+/* discover page */
+.bgdiscover{
+  background: #2F303A;
+}
+.image_cam{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.image_cam img{
+  width: 100%;
+}
+.s_discover{
+  padding-top: 60px;
+  display: grid;
+  gap: 2rem;
+  padding-bottom: 60px;
+}
+.s_discover h1{
+  font-size: 40px;
+  font-weight: 400px;
 }
 /* code for responsiveness */
 @media screen and (min-width:1024px) {
@@ -81,5 +135,41 @@ ul{
     /* this is for menu bar on desktop */
     .menu{
         display: none;
+    }
+    .hero{
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+    }
+    .feel_join h1{
+      font-size: 72px;
+      color:white;
+    }
+    .feel_join p{
+      line-height:  54px;
+      font-size: 36px;
+      margin-top: 39px;
+      margin-bottom: 39px;
+    }
+    .feel_join button{
+      font-size: 36px;
+    }
+    /* discover-responsive */
+    .s_discover{
+      padding-top: 146px;
+      grid-template-columns: 60% 40%;
+      gap: 0;
+      align-items: center;
+      padding-bottom: 146px;
+    }
+    .s_discover h1{
+      font-size: 72px;
+    }
+    .image_cam img{
+      width: 144px;
+    }
+    .image_cam{
+      display: flex;
+      padding-top: 52px;
+      padding-bottom: 52px;
     }
 }
