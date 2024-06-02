@@ -50,6 +50,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 59px;
 }
 .logosound{
   display: flex;
@@ -73,6 +74,8 @@ ul{
   display: grid;
   color: white;
   gap: 2rem;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .feel_join p{
   font-size: 20px;
@@ -118,6 +121,47 @@ ul{
   font-size: 40px;
   font-weight: 400px;
 }
+/* join form page*/
+.joinForm{
+  background: #2F303A;
+}
+.joinThe{
+  font-size: 30px;
+  font-weight: 600px;
+}
+.joinThe span{
+  font-size: 45px;
+  color: #9c1368;
+}
+/* input section */
+.form{
+  background-color: #202027;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+label{
+  font-size: 24px;
+  margin-top: 29px;
+  margin-bottom: 29px;
+}
+input{
+  border:2px solid #1762A7;
+  border-radius: 10px;
+  width: 100%;
+  background: transparent;
+  padding: 10px 20px;
+  font-size: 17px;
+  outline: none;
+  margin-top: 20px;
+  margin-bottom: 29px;
+}
+.joinInput{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
 /* code for responsiveness */
 @media screen and (min-width:1024px) {
     .logosound span{
@@ -139,6 +183,7 @@ ul{
     .hero{
       grid-template-columns: repeat(2,1fr);
       align-items: center;
+      padding-top: 146px;
     }
     .feel_join h1{
       font-size: 72px;
@@ -171,5 +216,30 @@ ul{
       display: flex;
       padding-top: 52px;
       padding-bottom: 52px;
+    }
+    /* join form */
+    .form{
+      padding: 50px;
+    }
+    .joinThe{
+      font-size: 60px;
+      font-weight: 700px;
+    }
+    .joinThe span{
+      font-size: 110px;
+      color: #9c1368;
+    }
+    input{
+      border-color:#1762A7;
+      border-radius: 5px;
+      width: 500px;
+      height: 50px;
+    }
+    .joinInput{
+      align-items: center;
+      padding-top: 146px;
+      padding-bottom: 146px;
+      justify-content: space-between;
+      flex-direction: row;
     }
 }
