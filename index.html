@@ -16,16 +16,23 @@
   </head>
   <body>
     <div class="bg">
+      <header id="sidebar" >
+        <ul>
+          <li onclick="hideNav()"><i class="fa-solid fa-xmark"></i></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="joinform.html">Join</a></li>
+        </ul>
+      </header>
     <nav>
         <div class="container navbar">
       <a class="logosound" href="/"
         ><img src="assets/Logo.png" alt="logo" /><span>SOUNDWAVE</span></a
       >
-      <ul>
+      <ul class="navLinks">
         <li><a href="discover.html">Discover</a></li>
         <li><a href="joinform.html">Join</a></li>
       </ul>
-      <div class="menu"><i class="fa-solid fa-bars"></i></div>
+      <div  class="menu" onclick="showNav()"><i class="fa-solid fa-bars" ></i></div>
     </div>
     </nav>
     <section>
@@ -38,5 +45,7 @@
       </div>
     </section>
   </div>
+  <script src="index.js"></script>
   </body>
 </html>
+<!-- https://tslam223.github.io/soundwave/ -->

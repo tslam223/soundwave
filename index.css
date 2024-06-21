@@ -63,7 +63,7 @@
     font-weight: 400;
     display: none;
 }
-ul{
+.navLinks{
     display: none;
 }
 /* this is for menu bar on mobile */
@@ -162,18 +162,36 @@ input{
   display: flex;
   flex-direction: column;
 }
+#sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  padding: 30px;
+  width: 250px;
+  z-index: 100;
+  background-color: red;
+  display: none;
+}
+#sidebar ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
 /* code for responsiveness */
 @media screen and (min-width:1024px) {
     .logosound span{
         display: block;
     } 
-    ul{
+    .navLinks{
         display: flex;
         gap: 151px;
         font-size: 40px;
         list-style: none;
     } 
-    ul a{
+    .navLinks a{
         color: #fff;
     }
     /* this is for menu bar on desktop */
